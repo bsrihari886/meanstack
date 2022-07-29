@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script>
+			var t=parseInt(window.prompt("enter no of tickets = "));
+			document.write("<p style='color:red; font-size:40px; background-color:silver;'>");
+			if(t>=6 || t<=0) {
+				document.write("tickets are not booked");
+				alert("you can book tickets in between 0 and 6");
+			}
+			else{
+				if(t<=2) {
+					result=150*t;
+					document.write("the price is "+result);
+				}
+				else {
+					result=(150*t)*(0.9);
+					document.write("the price is after 10% discount is "+result);
+				}
+			}
+			document.write("</p>");
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
